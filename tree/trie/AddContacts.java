@@ -62,7 +62,7 @@ class AddContacts {
 			if(temp.child[i] != null) {
 				char ch = (char)('a' + i);
 				str += Character.toString(ch);
-				if(temp.child[i].endOfWord == true)
+				if(temp.child[i].endOfWord)
 					stringArray.add(str);
 				addValues(temp.child[i],str);
 			} 
